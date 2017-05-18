@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class GenericStack<E>
 {
     private E[] elements;
-    private int count;
+    private static int count;
 
     public GenericStack()
     {
@@ -47,8 +47,9 @@ public class GenericStack<E>
             throw new IndexOutOfBoundsException();
         else
         {
-            element = elements [count];
+            element = elements [count-1];
         }
+        count--;
         return element;
     }
 }

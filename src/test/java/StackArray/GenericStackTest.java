@@ -37,5 +37,4 @@ public class GenericStackTest {
         stack.pop();
         // Then we should get an exception
     }
-
 }
